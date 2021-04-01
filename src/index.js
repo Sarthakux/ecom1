@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom'  ;
+import ShowCart from './ShowCart';
 
+const jsx= (
+  <Router>
+  <div>
+    <Route path = "/" component = {App} exact={true}/>
+    <Route path = "/ShowCart" component = {ShowCart} />
+  </div>
+  </Router>
+);
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  jsx,
   document.getElementById('root')
 );
 
