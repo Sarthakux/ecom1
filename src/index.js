@@ -3,19 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom'  ;
-import ShowCart from './ShowCart';
+import { BrowserRouter as Router } from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css";
 
-const jsx= (
-  <Router>
-  <div>
-    <Route path = "/" component = {App} exact={true}/>
-    <Route path = "/ShowCart" component = {ShowCart} />
-  </div>
-  </Router>
-);
+
+
 ReactDOM.render(
-  jsx,
+  <Router>
+  <App />
+  </Router>,
   document.getElementById('root')
 );
 
