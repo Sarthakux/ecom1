@@ -1,0 +1,14 @@
+.heading{
+    background-color: darkblue;
+    font-style: oblique;
+    font-weight: 800;
+    margin-top: 0;
+    border: black;
+    border-radius: 5 blue;
+    color: whitesmoke;
+}
+
+.link{
+    color: red;
+    margin-bottom: 10px;
+}
