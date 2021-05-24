@@ -5,14 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
+import { AuthProvider } from './contexts/AuthContext';
+
 
 
 
 ReactDOM.render(
-  <Router>
+  <AuthProvider>
   <App />
-  </Router>,
-  document.getElementById('root')
+  </AuthProvider>
+  ,document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

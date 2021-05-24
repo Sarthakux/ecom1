@@ -1,14 +1,61 @@
-.heading{
+.flex-container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     background-color: darkblue;
     font-style: oblique;
-    font-weight: 800;
-    margin-top: 0;
-    border: black;
-    border-radius: 5 blue;
     color: whitesmoke;
+    padding: 0.5vh 5%;
+   
 }
 
-.link{
-    color: red;
-    margin-bottom: 10px;
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 15vw 85vw;
+}
+
+.grid-second {
+    border: 3px solid rgb(235, 207, 200);
+    margin: 1vh 0.5vw ;
+    padding: 1vh 2vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.grid-first {
+    border: 3px solid rgb(185, 177, 180); 
+    margin: 1vh 0.5vw ;
+    text-align: center;
+
+}
+.btn-prod {
+    border-radius: 10%;
+    background: steelblue;
+    color: white;
+    border: 1px solid rgb(250, 193, 37);
+}
+
+.grid-container-orig {
+    display: grid;
+    grid-template-rows: 15vh 85vh;
+}
+
+.prod{
+    text-align: center;
+}
+
+
+.card {
+    padding: 1vh 1vw;
+    margin: 1vh 1vw;
+}
+
+.card-image {
+    width: 20vw;
+    max-height: 25vh;
 }

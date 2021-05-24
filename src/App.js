@@ -1,10 +1,11 @@
 
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'  ;
- import ShowCart from './ShowCart.jsx';
+ import ShowCart from './ShowCart.js';
  import Signup from './Signup.js'
  import Main from './main.js';
-// import { NotesContext } from "./context/context";
+
+import Login from './Login';
 
 
 import './App.css';
@@ -72,7 +73,7 @@ function App() {
 
   
    return (
-     
+     <>
       
           <div>
           <div>
@@ -80,6 +81,7 @@ function App() {
               <div>
                 <switch>
                   <Route path ="/" component = {Signup} exact ={true} />
+                  <Route path ="/login" component = {Login} exact ={true} />
                 <Route path = "/main"  exact={true}>
                  <Main Cart = {Cart} productData = {products} setCart = {setCart} /> 
                 </Route> 
@@ -92,6 +94,7 @@ function App() {
               </div>
               
             </div> 
+             </>
       
      
      
